@@ -7,30 +7,29 @@ public class Tabla {
         Scanner sc = new Scanner(System.in);
 
         while (true) {
-            int numero = 0;
-            boolean numeroValido = false;
+            int Numero = 0;
+            boolean NumeroValido = false;
 
         
-            while (!numeroValido) {
+            while (!NumeroValido) {
                 try {
                     System.out.print("Ingrese el numero para mostrar su tabla de multiplicar (0 para salir): ");
-                    numero = sc.nextInt();
-                    numeroValido = true;
+                    Numero = sc.nextInt();
+                    NumeroValido = true;
                 } catch (InputMismatchException e) {
                     System.out.println("Entrada invalida, debe ingresar un numero entero.\n");
                     sc.nextLine(); 
                 }
-            }
+            }  
 
-            
-            if (numero == 0) {
-                System.out.println("Chao");
+            if (Numero == 0) {
+                System.out.println("hasta luego");
                 break;
             }
 
-            System.out.println("\nTabla de multiplicar del " + numero + ":");
+            System.out.println("\nTabla de multiplicar del " + Numero + ":");
             for (int i = 1; i <= 10; i++) {
-                System.out.println(numero + " x " + i + " = " + (numero * i));
+                System.out.println(Numero + " x " + i + " = " + (Numero * i));
             }
             System.out.println(); 
         }
