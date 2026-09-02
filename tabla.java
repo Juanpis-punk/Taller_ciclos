@@ -9,7 +9,7 @@ public class Tabla {
         while (true) {
             int Numero = 0;
             boolean NumeroValido = false;
-
+            /*:v */
         
             while (!NumeroValido) {
                 try {
