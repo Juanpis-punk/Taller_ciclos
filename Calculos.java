@@ -5,28 +5,38 @@ class Calculos{
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        int calculo;
+        int calculo = 0;
 
         
         
         do { 
-            System.out.println("=================================");
-            System.out.println("          BIENVENIDO!! :3");
-            System.out.println("               /\\_/\\  ");
-            System.out.println("              ( o.o ) ");
-            System.out.println("               > ^ <  ");
-            System.out.println("╔═══════════════════════════════╗");
-            System.out.println("║       CENTRO DE CÁLCULOS      ║");
-            System.out.println("╚═══════════════════════════════╝");
-            System.out.println("Escoge el cálculo que quieras hacer:");
-            System.out.println("1. Calcular n-esimo número de la secuencia de Fibonacci");
-            System.out.println("2. Calcular n-esimo número primo y sumarlo a un número dado");
-            System.out.println("3. Calcular raíces de una ecuación cuadrática");
-            System.out.println("4. Promedio entre n números");
-            System.out.println("5. Salir");
-            System.out.print("Tu elección: ");
-            calculo = sc.nextInt();
-            System.out.println("=======================================================");
+
+            try{
+
+                System.out.println("=================================");
+                System.out.println("          BIENVENIDO!! :3");
+                System.out.println("               /\\_/\\  ");
+                System.out.println("              ( o.o ) ");
+                System.out.println("               > ^ <  ");
+                System.out.println("╔═══════════════════════════════╗");
+                System.out.println("║       CENTRO DE CÁLCULOS      ║");
+                System.out.println("╚═══════════════════════════════╝");
+                System.out.println("Escoge el cálculo que quieras hacer:");
+                System.out.println("1. Calcular n-esimo número de la secuencia de Fibonacci");
+                System.out.println("2. Calcular n-esimo número primo y sumarlo a un número dado");
+                System.out.println("3. Calcular raíces de una ecuación cuadrática");
+                System.out.println("4. Promedio entre n números");
+                System.out.println("5. Salir");
+                System.out.print("Tu elección: ");
+                calculo = sc.nextInt();
+                System.out.println("=======================================================");
+                }
+            catch (Exception e) {
+                System.out.println("=======================================================");
+                System.out.println("No vale, ingresa un número válido.");
+                sc.nextLine(); 
+                }
+            
 
             switch(calculo){
 
@@ -211,7 +221,7 @@ class Calculos{
                 System.out.println("Raíz 2: " + raiz2 +" (-)");
                 System.out.println("============================================");
 
-               
+            
         
             break;
 
@@ -264,10 +274,11 @@ class Calculos{
                 break;
 
             default:
-                System.out.println("Opción no válida");
+                System.out.println("Solo Números del 1 al 5, intenta de nuevo.");
             }   
             }
-            while (calculo != 5);
+        while (calculo != 5);
+        sc.close();
             
         }
     }
@@ -332,21 +343,3 @@ class Calculos{
 
 
 
-
-        /* 
-        System.out.print("Ingresa la cantidad de dígitos de la secuancia de Fibanacci que quieres ver: ");
-        int digitos = sc.nextInt();
-        int a = 0;
-        int b = 1;
-
-        for (int i = 1; i <= digitos; i++){
-            System.out.print(a);
-            System.out.print(", ");
-            int sum = a+b;
-            a = b;
-            b = sum;
-        }
-            */
-        
-        
-    
