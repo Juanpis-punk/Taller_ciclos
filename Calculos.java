@@ -26,7 +26,7 @@ class Calculos{
             System.out.println("5. Salir");
             System.out.print("Tu elección: ");
             calculo = sc.nextInt();
-            System.out.println("============================================");
+            System.out.println("=================================");
 
             switch(calculo){
 
