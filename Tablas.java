@@ -23,7 +23,7 @@ public class Tablas {
             }  
 
             if (Numero == 0) {
-                System.out.println("hasta luego");
+                System.out.println("𝓫𝔂𝓮 ༼ つ ◕_◕ ༽つ");
                 break;
             }
 

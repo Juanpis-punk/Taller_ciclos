@@ -52,9 +52,14 @@ public class AdivinaNumeros {
                 } else {
                     adivino = true;
                     System.out.println("\n¡bien hecho, era  " + numeroSecreto
-                            + " y te tomo " + intentos + " intento(s).");
+                            + " y te tomo " + intentos + " intento(s)" );
                 }
-
+                        System.out.println("╲╲╲╲╲╭━╮╭━╮╲╲╲");
+                        System.out.println("╲╲╲╲╭┻▇┻┻▇┻╮╲╲");
+                        System.out.println("╲╲╲╲┃╰━━━━╯┃╲╲");
+                        System.out.println("╲╲╲╭┫┃┃┈┈┃┃┣╮╲╲");
+                        System.out.println("╲╲╭┛┃┃┃┈┈┃┃┃┗╮╲");
+                        System.out.println("━━┻━┻┻┻━━┻┻┻━┻━━"); 
             } catch (InputMismatchException e) {
                 System.out.println("Entrada invalida, debe ingresar un numero entero.");
                 sc.nextLine();
