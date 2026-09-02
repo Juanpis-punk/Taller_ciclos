@@ -1,8 +1,8 @@
-import java.util.Scanner;
-import java.util.Random;
 import java.util.InputMismatchException;
+import java.util.Random;
+import java.util.Scanner;
 
-public class adivinanumero {
+public class AdivinaNumero {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
