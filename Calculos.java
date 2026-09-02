@@ -168,7 +168,7 @@ class Calculos{
                     valido = true;
                 } 
                 catch (Exception e) {
-                    System.out.println("Entrada invalida, ingresa un numero real.\n");
+                    System.out.println("No se vale, ingresa un numero real.\n");
                     sc.nextLine(); 
                 }
                 }
@@ -182,7 +182,7 @@ class Calculos{
                     valido = true;
                 } 
                 catch (Exception e) {
-                    System.out.println("Entrada invalida, ingresa un numero real.\n");
+                    System.out.println("No se vale, ingresa un numero real.\n");
                     sc.nextLine(); 
                 }
                 }
@@ -195,7 +195,7 @@ class Calculos{
                     valido = true;
                 } 
                 catch (Exception e) {
-                    System.out.println("Entrada invalida, ingresa un numero real.\n");
+                    System.out.println("No se vale, ingresa un numero real.\n");
                     sc.nextLine(); 
                 }
                 }
@@ -207,8 +207,8 @@ class Calculos{
 
                 System.out.println("============================================");
                 System.out.println("Las raíces de la ecuación cuadrática son:");    
-                System.out.println("Raíz 1: " + raiz1);
-                System.out.println("Raíz 2: " + raiz2);
+                System.out.println("Raíz 1: " + raiz1 +" (+)");
+                System.out.println("Raíz 2: " + raiz2 +" (-)");
                 System.out.println("============================================");
 
                
