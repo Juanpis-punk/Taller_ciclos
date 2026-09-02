@@ -53,7 +53,7 @@ class Calculos{
 
                         if (posicion <= 0) {
                             while (posicion <= 0) {
-                            System.out.print("Ingresa una posición válida de la secuencia de fibonacci (mayor y diferente de 0): ");
+                            System.out.print("Ingresa una posición válida de la secuencia de fibonacci (mayor y diferente de 0, no decimal): ");
                             posicion = sc.nextInt();
                             }
                             break;
