@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Tabla {
+public class Tablas {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -9,7 +9,7 @@ public class Tabla {
         while (true) {
             int Numero = 0;
             boolean NumeroValido = false;
-            /*:v */
+
         
             while (!NumeroValido) {
                 try {
